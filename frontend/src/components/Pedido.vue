@@ -321,12 +321,12 @@ export default {
                 this.validaMensaje.push('El nombre debe tener entre 1 a 50 caracteres.')
             }
             if(this.direccion.length < 1 || this.nombre.length > 80){
-                this.validaMensaje.push('El nombre debe tener entre 1 a 80 caracteres.')
+                this.validaMensaje.push('La dirección debe tener entre 1 a 80 caracteres.')
             }
             if(!this.hora){
                 this.validaMensaje.push('Indicá un horario de entrega.')
             }
-            if(!this.detalles){
+            if(this.detalles.length === 0){
                 this.validaMensaje.push('Agregá productos al pedido.')
             }
             if(this.validaMensaje.length){
